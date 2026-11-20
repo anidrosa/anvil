@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divine Expression's Anvil</title>
+<style>
+  :root {
+    --purple: #5A2D82;
+    --plum: #8A3FA0;
+    --gold: #D4AF37;
+    --champagne: #E6C77A;
+    --cream: #F5EFE6;
+    --sand: #E6D8C9;
+    --taupe: #CBBBAA;
+    --ink: #2E1A40;
+    --muted: #5C4A6B;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 16px 72px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: var(--purple);
+    font-size: 2.3rem;
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+  .intro {
+    color: var(--muted);
+    margin: 0 0 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--taupe);
+  }
+  .label {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+
+  /* Start here */
+  .start {
+    background: var(--purple);
+    color: var(--cream);
+    border-radius: 14px;
+    padding: 36px 28px;
+    margin-bottom: 64px;
+    border: 2px solid var(--gold);
+  }
+  .start .label { color: var(--champagne); }
+  .start h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: var(--champagne);
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 18px;
+  }
+  .start .why {
+    font-size: 1.05rem;
+    margin: 0 0 28px;
+  }
+  .start dt { color: var(--champagne); }
+
+  /* Next up */
+  .next > .label { color: var(--plum); }
+  .project {
+    border-top: 1px solid var(--taupe);
+    padding: 32px 0;
+  }
+  .project:last-child { border-bottom: 1px solid var(--taupe); }
+  .project h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: var(--purple);
+    font-size: 1.35rem;
+    margin: 0 0 16px;
+  }
+  .project dt { color: var(--plum); }
+
+  dl { margin: 0 0 22px; }
+  dt {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+  dt:first-child { margin-top: 0; }
+  dd { margin: 2px 0 0; }
+
+  .prompt {
+    border: 1.5px solid var(--plum);
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .start .prompt { border-color: var(--champagne); }
+  .prompt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: var(--sand);
+    border-bottom: 1px solid var(--taupe);
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .start .prompt-head { background: var(--champagne); color: var(--ink); border-bottom-color: var(--gold); }
+  pre {
+    margin: 0;
+    padding: 16px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--ink);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  button.copy {
+    font: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--purple);
+    background: var(--purple);
+    color: var(--cream);
+    cursor: pointer;
+    min-height: 34px;
+  }
+  button.copy:hover { background: var(--plum); border-color: var(--plum); }
+  button.copy:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  .closing {
+    margin: 56px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--purple);
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    main { padding-top: 40px; }
+    h1 { font-size: 1.9rem; }
+    .start { padding: 28px 18px; }
+    .start h2 { font-size: 1.65rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Divine Expression's Anvil</h1>
+  <p class="intro">What to build next with Claude, in order.</p>
+
+  <section class="start">
+    <p class="label">Start here</p>
+    <h2>Fill Your Gaps</h2>
+    <p class="why">Your offers file names more than a dozen offers, but your confirmed current catalog, your signature offer and several prices are still marked [FILL IN], and the file itself warns not to treat any offer as live without checking. Until those answers are in, almost every other project on this page has to stop and ask what you are actually offering right now.</p>
+    <dl>
+      <dt>You end up with</dt>
+      <dd>Real files instead of placeholders.</dd>
+      <dt>You learn</dt>
+      <dd>A standing rule that makes the folder improve itself.</dd>
+    </dl>
+    <div class="prompt">
+      <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+      <pre>Check open-questions.md. Tell me how many are still unanswered, then ask me the top one. When I answer, write it into the right file, tick it off, and push to main.</pre>
+    </div>
+  </section>
+
+  <section class="next">
+    <p class="label">Next up</p>
+
+    <article class="project">
+      <h3>Make It Check Your Voice</h3>
+      <dl>
+        <dt>You end up with</dt>
+        <dd>A sharper voice file.</dd>
+        <dt>You learn</dt>
+        <dd>Your files are a standard to measure against, not just storage.</dd>
+      </dl>
+      <div class="prompt">
+        <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+        <pre>Read brand/voice.md. Then read this piece of my writing: [paste it]. Go through it and tell me every place it drifts from my voice file. Then tell me what my voice file is missing that would have caught those, add it to the file, and push to main.</pre>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Turn a Correction Into a Rule</h3>
+      <dl>
+        <dt>You end up with</dt>
+        <dd>One rule that sticks forever.</dd>
+        <dt>You learn</dt>
+        <dd>Saying do this beats repeating don't do that.</dd>
+      </dl>
+      <div class="prompt">
+        <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+        <pre>Here's a correction I keep giving you: [type it]. Rewrite it as a positive instruction that says what to do rather than what to avoid. Add it to CLAUDE.md and push to main.</pre>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>A Week of Content From One Recording</h3>
+      <dl>
+        <dt>You end up with</dt>
+        <dd>Actual posts.</dd>
+        <dt>You learn</dt>
+        <dd>Feeding it your raw material instead of asking it to invent.</dd>
+      </dl>
+      <div class="prompt">
+        <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+        <pre>Here's a transcript of me talking for a few minutes: [paste it]. Using my voice file and who-i-serve.md, pull out every idea in here worth a post. Give me the list first and wait. Then draft the three strongest in my voice, save them into a content folder, and push to main.</pre>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Let It Play Your Client</h3>
+      <dl>
+        <dt>You end up with</dt>
+        <dd>The questions your messaging can't answer yet.</dd>
+        <dt>You learn</dt>
+        <dd>You can hand Claude a role and use it to poke holes in your work.</dd>
+      </dl>
+      <div class="prompt">
+        <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+        <pre>Read my files, then act as someone who is considering booking [my offer name] and hasn't decided yet. Ask me the questions that person would really ask before paying. One at a time, and wait for my answer. Any time you hit a question my files can't answer, stop and tell me that's a hole in my messaging.</pre>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Build One Small Tool</h3>
+      <dl>
+        <dt>You end up with</dt>
+        <dd>A tracker or worksheet that actually works.</dd>
+        <dt>You learn</dt>
+        <dd>You can make software by describing it.</dd>
+      </dl>
+      <div class="prompt">
+        <div class="prompt-head"><span>Prompt</span><button class="copy" type="button">Copy</button></div>
+        <pre>I want to build [describe the tool] for [who it's for]. Before you write anything, ask me what it needs to give the person at the end. Then build it as one self-contained HTML file with the styling inside it, save it in a folder named after it, and push to main.</pre>
+      </div>
+    </article>
+  </section>
+
+  <p class="closing">Work down the list in order. One project per sitting is enough.</p>
+</main>
+<script>
+  document.querySelectorAll('button.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.closest('.prompt').querySelector('pre').textContent;
+      function done(ok) {
+        btn.textContent = ok ? 'Copied' : 'Select and copy';
+        setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        done(ok);
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      } else {
+        fallback();
+      }
+    });
+  });
+</script>
+</body>
+</html>
